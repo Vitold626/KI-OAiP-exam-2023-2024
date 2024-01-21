@@ -1,0 +1,22 @@
+void task27(){
+    int n; 
+    printf("Введите n: "); 
+    scanf("%d", &n); 
+    int n = number; 
+    int reverse = 0; 
+    while (n != 0) {
+        reverse = reverse * 10 + n % 10;
+        n /= 10;
+    }
+    while(reverse != number){
+        printf("%d + %d = %d\n",number,reverse,number+reverse);
+        number += reverse;
+        n = number;
+        reverse = 0;
+        while (n != 0) {
+            reverse = reverse * 10 + n % 10;
+            n /= 10;
+        }
+    }
+    printf("Число, полученное выписыванием цифр заданного числа в обратном порядке, равно %d\n", reverse);
+}
